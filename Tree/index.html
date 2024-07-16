@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Visualizer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="treeVisuScript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Tree Visualizer</h1>
+        <p>Visualize your hierarchical tree structure!</p>
+    </div>
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Enter your tree data in the input area below:</li>
+            <ul>
+                <li>Each line represents a node or a parent-child relationship.</li>
+                <li>To define a node, enter a single number.</li>
+                <li>To define a relationship, enter two numbers separated by a space, where the first number is the parent and the second number is the child.</li>
+            </ul>
+            <li>As you make changes in the input area, the tree visualization will update automatically in real-time.</li>
+        </ol>
+    </div>
+    <div id="container">
+        <div id="input-panel">
+            <h2>Tree Input</h2>
+            <textarea id="input"></textarea>
+        </div>
+        <div id="output-panel">
+            <h2>Tree Output Visualization</h2>
+            <div id="svg-container">
+                <svg id="tree-svg"></svg>
+            </div>
+            <button id="download-btn">Download Tree</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- <p>&copy; 2023 Tree Visualizer. All rights reserved.</p> -->
+    </div>
+</body>
+</html>
